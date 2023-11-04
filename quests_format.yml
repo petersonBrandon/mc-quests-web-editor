@@ -1,0 +1,189 @@
+# For non-English characters, this file MUST stay encoded in UTF-8
+quests:
+  custom1:
+    name: Test
+    ask-message: Challenge objectives!
+    finish-message: Well done!
+    npc-giver-uuid: 586abfb2-df0a-4be0-8591-fce550db591c
+    block-start: admin_sandbox 0.0 -61.0 2.0
+    region: bellkirk
+    gui-display:
+      ==: org.bukkit.inventory.ItemStack
+      v: 3578
+      type: GRASS_BLOCK
+    requirements:
+      money: 100
+      quest-points: 20
+      exp: 15
+      items:
+      - ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: SPRUCE_FENCE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"text":"Yeetus"}],"text":""}'
+          lore:
+          - '{"extra":[{"text":"Lets"}],"text":""}'
+          - '{"extra":[{"text":"Go"}],"text":""}'
+          - '{"extra":[{"text":"Fasssssssttttt"}],"text":""}'
+          enchants:
+            SOUL_SPEED: 7
+          Damage: 50
+      remove-items:
+      - false
+      permissions:
+      - minecraft.*
+    stages:
+      ordered:
+        '1':
+          break-block-names:
+          - GRASS_BLOCK
+          break-block-amounts:
+          - 100
+          break-block-durability:
+          - 30
+          damage-block-names:
+          - GRASS_BLOCK
+          damage-block-amounts:
+          - 1
+          damage-block-durability:
+          - 20
+          place-block-names:
+          - GRASS_BLOCK
+          place-block-amounts:
+          - 1
+          place-block-durability:
+          - 30
+          use-block-names:
+          - GRASS_BLOCK
+          use-block-amounts:
+          - 1
+          use-block-durability:
+          - 100
+          items-to-craft:
+          - ==: org.bukkit.inventory.ItemStack
+            v: 3578
+            type: IRON_PICKAXE
+          items-to-smelt:
+          - ==: org.bukkit.inventory.ItemStack
+            v: 3578
+            type: STONE
+          items-to-enchant:
+          - ==: org.bukkit.inventory.ItemStack
+            v: 3578
+            type: DIAMOND_PICKAXE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              enchants:
+                MENDING: 1
+          items-to-brew:
+          - ==: org.bukkit.inventory.ItemStack
+            v: 3578
+            type: POTION
+            meta:
+              ==: ItemMeta
+              meta-type: POTION
+              potion-type: minecraft:strong_harming
+          items-to-consume:
+          - ==: org.bukkit.inventory.ItemStack
+            v: 3578
+            type: BREAD
+          cows-to-milk: 50
+          fish-to-catch: 30
+          players-to-kill: 5
+          items-to-deliver:
+          - ==: org.bukkit.inventory.ItemStack
+            v: 3578
+            type: POTION
+            meta:
+              ==: ItemMeta
+              meta-type: POTION
+              potion-type: minecraft:strong_harming
+          npc-delivery-uuids:
+          - 586abfb2-df0a-4be0-8591-fce550db591c
+          delivery-messages:
+          - Thank you. Only <amount> more to go!
+          npc-uuids-to-talk-to:
+          - 586abfb2-df0a-4be0-8591-fce550db591c
+          npc-uuids-to-kill:
+          - 586abfb2-df0a-4be0-8591-fce550db591c
+          npc-kill-amounts:
+          - 1
+          mobs-to-kill:
+          - Allay
+          mob-amounts:
+          - 1
+          locations-to-kill:
+          - admin_sandbox -3.0 -61.0 0.0
+          kill-location-radii:
+          - 20
+          kill-location-names:
+          - Death
+          locations-to-reach:
+          - admin_sandbox -2.0 -61.0 2.0
+          reach-location-radii:
+          - 5
+          reach-location-names:
+          - Yeet
+          mobs-to-tame:
+          - Camel
+          mob-tame-amounts:
+          - 1
+          sheep-to-shear:
+          - White
+          sheep-amounts:
+          - 1
+          password-displays:
+          - Yeetus
+          password-phrases:
+          - newt
+          start-event: ApplyPotion
+          finish-event: CancelTimer
+          fail-event: DeathFail
+          death-event: GiveRod
+          disconnect-event: NiceFinish
+          chat-events:
+          - RunCommand
+          chat-event-triggers:
+          - yeet
+          command-events:
+          - TimerStart
+          command-event-triggers:
+          - skill
+          condition: RideThePig
+          delay: 10
+          delay-message: Delayed
+          start-message: Start
+          complete-message: Noice
+    rewards:
+      items:
+      - ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: GRASS_BLOCK
+      money: 1000
+      quest-points: 20
+      exp: 1000
+      commands:
+      - rtp
+      permissions:
+      - skill
+      permission-worlds:
+      - world
+    planner:
+      start: 30:9:2023:11:30:0:America/Chicago
+      end: 31:9:2023:12:0:0:CST
+      repeat: 10
+      cooldown: 10
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+      ignore-block-replace: true

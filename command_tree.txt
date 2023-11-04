@@ -1,0 +1,184 @@
+CREATION:
+Name
+Ask Message
+Finish Message
+NPC Start
+Block Start
+Region Start
+GUI Item Display
+    -> Add Item
+        -> Set Name
+        -> Set Amount
+        -> Set Durability
+        -> Add Enchantments
+        -> Set Display Name
+        -> Set Lore 
+Edit Requirements
+    -> Money Requirements
+    -> Quest Points Requirements
+    -> Item Requirements
+        -> Add Item
+            -> Set Name
+            -> Set Amount
+            -> Set Durability
+            -> Add Enchantments
+            -> Set Display Name
+            -> Set Lore
+    -> Experience Requirements
+    -> Permissions Requirements
+    -> Quest Requirements
+    -> Quest Blocks
+Edit Planner
+    -> Start Date
+        -> Year
+        -> Month
+        -> Day
+        -> Hour
+        -> Minute
+        -> Second
+        -> Time Zone
+    -> End Date
+        -> Year
+        -> Month
+        -> Day
+        -> Hour
+        -> Minute
+        -> Second
+        -> Time Zone
+    -> Repeat Cycle
+    -> Player Cooldown
+    -> Ignore cooldown after repeat (boolean)
+Edit Stages
+    -> Add New Stage
+        -> Blocks
+            -> Break Blocks
+                -> Set Block Names
+                -> Set Block Amounts
+                -> Set Block durability
+            -> Damage Blocks
+                -> Set Block Names
+                -> Set Block Amounts
+                -> Set Block durability
+            -> Place Blocks
+                -> Set Block Names
+                -> Set Block Amounts
+                -> Set Block durability
+            -> Use Blocks
+                -> Set Block Names
+                -> Set Block Amounts
+                -> Set Block durability
+        -> Items
+            -> Craft Items
+                -> Add Item 
+                    -> Set Name
+                    -> Set Amount
+                    -> Set Durability
+                    -> Add Enchantments
+                    -> Set Display Name
+                    -> Set Lore
+            -> Smelt Items
+                -> Add Item 
+                    -> Set Name
+                    -> Set Amount
+                    -> Set Durability
+                    -> Add Enchantments
+                    -> Set Display Name
+                    -> Set Lore
+            -> Enchant Items
+                -> Add Item 
+                    -> Set Name
+                    -> Set Amount
+                    -> Set Durability
+                    -> Add Enchantments
+                    -> Set Display Name
+                    -> Set Lore
+            -> Brew Potions
+                -> Add Item 
+                    -> Set Name
+                    -> Set Amount
+                    -> Set Durability
+                    -> Add Enchantments
+                    -> Set Display Name
+                    -> Set Lore
+            -> Consume Items
+                -> Add Item 
+                    -> Set Name
+                    -> Set Amount
+                    -> Set Durability
+                    -> Add Enchantments
+                    -> Set Display Name
+                    -> Set Lore
+        -> NPCs
+            -> Deliver Items
+                -> Add Item 
+                    -> Set Name
+                    -> Set Amount
+                    -> Set Durability
+                    -> Add Enchantments
+                    -> Set Display Name
+                    -> Set Lore
+                -> Add NPC UUID
+                -> Set Partial Delivery Message
+            -> Talk to NPCs
+            -> Kill NPCs
+                -> Add NPC UUID
+                -> Set Kill Amounts
+        -> Mobs
+            -> Kill Mobs
+                -> Set Mob Types
+                -> Set Mob Amounts
+                -> Set Kill Locations
+                -> Set Kill Location Radii
+                -> Set Kill Location Names
+            -> Tame Mobs
+                -> Set Mob Types
+                -> Set Tame Amounts
+            -> Catch Fish
+            -> Milk Cows
+            -> Shear Sheep
+                -> Set Sheep Colors
+                -> Set Shear Amounts
+        -> Kill Players
+        -> Reach Locations
+            -> Set Locations
+            -> Set Location Radii
+            -> Set Location Names
+        -> Passsword
+            -> Add Passsword Hints
+            -> Add Passsword Phrases
+        -> Actions
+            -> Start Action
+            -> Finish Action
+            -> Fail Action
+            -> Death Action
+            -> Disconnect Action
+            -> Chat Action
+            -> Command Action
+        -> Condititions
+        -> Delay
+        -> Delay Message
+        -> Start Message
+        -> Complete Message
+Edit Rewards
+    -> Money Reward
+    -> Quest Points Reward
+    -> Item Reward
+        -> Add Item
+            -> Set Name
+            -> Set Amount
+            -> Set Durability
+            -> Add Enchantments
+            -> Set Display Name
+            -> Set Lore
+    -> Experience Reward
+    -> Command Reward
+    -> Permissions Reward
+        -> Set Permission Rewards
+        -> Set Permission Worlds
+Edit Options
+    -> General
+        -> Allow Commands During Quest (boolean)
+        -> Allow Quitting (boolean)
+        -> Ignore Blocks Broken with Silk Touch (boolean)
+        -> Ignore Blocks Replaced once Broken (boolean)
+
